@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  db:
+    restart: unless-stopped
+    volumes:
+      - ./database-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=admin
+    image: postgres:13.12-alpine3.18
