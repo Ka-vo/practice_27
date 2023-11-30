@@ -101,7 +101,7 @@ echo $FormReg->create_data();
       <input type="password" class="form-control" name="password_confirm" placeholder="Подтвердите пароль">
       <button class="btn btn-primary mt-1 w-100" type="submit">Зарегистрироваться</button>
       <p>
-        У вас уже есть аккаунт? - <a href="../php/auth.php">авторизируйтесь</a>!
+        У вас уже есть аккаунт? - <a href="/php/auth.php">авторизируйтесь</a>!
       </p>
     </form>
   </div>
