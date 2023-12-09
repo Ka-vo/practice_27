@@ -21,8 +21,8 @@ class Db
 
   public static function get()
   {
-    if (null <> Db::connect()) {
-      $conn = Db::connect();
+    if (null <> self::connect()) {
+      $conn = self::connect();
     }
 
     return $conn;
@@ -31,5 +31,19 @@ class Db
 
   protected function __construct()
   {
+  }
+}
+
+class Roles
+{
+  public static function user()
+  {
+    $User = 'User';
+    return  $User;
+  }
+  public static function vkuser()
+  {
+    $VKUser = 'VKUser';
+    return  $VKUser;
   }
 }

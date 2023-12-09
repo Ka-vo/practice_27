@@ -1,0 +1,16 @@
+{
+    "name": "mrnob/module27",
+    "autoload": {
+        "psr-4": {
+            "Mrnob\\Module27\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "me"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}
